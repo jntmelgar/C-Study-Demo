@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int pa[10], razao, inicial;
+
+    // Exercício 03 - Progressão Aritmética
+    printf("Digite o termo inicial e a razão da PA:\n");
+    scanf("%d %d", &inicial, &razao);
+
+    for (int i = 0; i < 10; i++) {
+        pa[i] = inicial + i * razao;
+        printf("PA[%d] = %d\n", i, pa[i]);
+    }
+
+    return 0;
+}

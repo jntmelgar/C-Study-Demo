@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int matriz[4][8], somalinha[4] = {0};
+
+    // Entrada de dados
+    printf("Digite os valores para preencher a matriz 4x8:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 8; j++) {
+            scanf("%d", &matriz[i][j]);
+            somalinha[i] += matriz[i][j]; // Soma das linhas
+        }
+    }
+
+    // Exibir matriz e vetor somalinha
+    printf("Matriz:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 8; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("Soma das linhas:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", somalinha[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
